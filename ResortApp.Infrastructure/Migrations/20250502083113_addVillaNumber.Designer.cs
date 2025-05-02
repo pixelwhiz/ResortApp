@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ResortApp.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using ResortApp.Infrastructure.Data;
 namespace ResortApp.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250502083113_addVillaNumber")]
+    partial class addVillaNumber
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,7 +61,7 @@ namespace ResortApp.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Villas", (string)null);
+                    b.ToTable("Villas");
 
                     b.HasData(
                         new
@@ -108,7 +111,7 @@ namespace ResortApp.Infrastructure.Migrations
 
                     b.HasIndex("VillaId");
 
-                    b.ToTable("VillaNumbers", (string)null);
+                    b.ToTable("VillaNumbers");
 
                     b.HasData(
                         new

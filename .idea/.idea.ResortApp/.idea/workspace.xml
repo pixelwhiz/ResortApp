@@ -10,68 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250214184906_SeedVillaToDb.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250214184906_SeedVillaToDb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250214190632_InitialCreate.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250214190632_InitialCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/VillaController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Notification.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Villa/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Villa/Delete.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Villa/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Villa/Update.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/images/accessDenied.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/images/notfound.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/images/orderConfirmed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/images/resort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/images/slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/images/slide2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 10 - Home Page and Details/1 Home Page UI .txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 10 - Home Page and Details/2 Villa List on Home Page UI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 10 - Home Page and Details/3 Villa Detail UI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 11 - Authentication in .NET/1 Login UI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 11 - Authentication in .NET/2 Register UI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 12 - Reloading Section of a View/1 Spinner CSS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 13 - Booking/1 Finalize Booking UI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 13 - Booking/2 Booking Confirmation UI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 14 - Manage Booking/1 Booking Detail UI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 16 - Charts/1 Color for Radial Chart.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 17 - Exports/BookingDetails.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 17 - Exports/ExportVillaDetails.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 2/1 Seed Villa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Code Snippets/Section 9 - Amenity/1 Seed Amenity.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/Room Images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/Room Images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/Room Images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/Room Images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/Room Images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/Room Images/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/Room Images/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/accessDenied.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/notfound.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/orderConfirmed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/resort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Images/slide2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/MVC Clean New.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/DesignTimeDbContextFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250502083113_addVillaNumber.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250502083113_addVillaNumber.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/VillaNumberControllercs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Create.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Domain/Entities/Villa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Domain/Entities/Villa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Domain/ResortApp.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Domain/ResortApp.Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/ResortApp.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/ResortApp.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/Error.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +34,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/Villa.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
@@ -100,39 +54,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ResortApp.Web: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.ResortApp.Web: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.hot reload.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ResortApp.Web: http.executor": "Run",
+    ".NET Launch Settings Profile.ResortApp.Web: https.executor": "Run",
+    ".NET Project.Unnamed.executor": "Run",
+    ".NET Project.hot reload.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "discord-application",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver.localdb&quot;,
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb",
+      "sqlserver"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ResortApp.Web: https">
     <configuration name="ResortApp.Web: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" />
@@ -225,7 +179,11 @@
       <workItem from="1745474569971" duration="8033000" />
       <workItem from="1745570131204" duration="595000" />
       <workItem from="1745655229150" duration="115000" />
-      <workItem from="1745692392167" duration="598000" />
+      <workItem from="1745692392167" duration="1411000" />
+      <workItem from="1745706858870" duration="592000" />
+      <workItem from="1746083540118" duration="685000" />
+      <workItem from="1746098866086" duration="1160000" />
+      <workItem from="1746166082925" duration="11225000" />
     </task>
     <servers />
   </component>

@@ -6,10 +6,10 @@ namespace ResortApp.Infrastructure.Data {
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-
         }
 
         public DbSet<Villa> Villas { get; set; }
+        public DbSet<VillaNumber> VillaNumbers  { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -47,6 +47,20 @@ namespace ResortApp.Infrastructure.Data {
                     Price = 400,
                     Sqft = 750,
                 });
+
+            modelBuilder.Entity<VillaNumber>().HasData(
+                new VillaNumber { VillaNum = 101, VillaId = 1, },
+                new VillaNumber { VillaNum = 102, VillaId = 1, },
+                new VillaNumber { VillaNum = 103, VillaId = 1, },
+                new VillaNumber { VillaNum = 104, VillaId = 1, },
+                new VillaNumber { VillaNum = 201, VillaId = 2, },
+                new VillaNumber { VillaNum = 202, VillaId = 2, },
+                new VillaNumber { VillaNum = 203, VillaId = 2, },
+                new VillaNumber { VillaNum = 301, VillaId = 3, },
+                new VillaNumber { VillaNum = 302, VillaId = 3, },
+                new VillaNumber { VillaNum = 303, VillaId = 3, }
+            );
+
         }
 
     }
