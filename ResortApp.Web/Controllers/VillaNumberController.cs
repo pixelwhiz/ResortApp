@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using ResortApp.Domain.Entities;
 using ResortApp.Infrastructure.Data;
+using ResortApp.Web.ViewModels;
 
 namespace ResortApp.Web.Controllers;
 
@@ -14,21 +16,24 @@ public class VillaNumberController : Controller
     {
         _db = db;
     }
-    
-    // GET
+
     public IActionResult Index()
     {
-        var villaNumbers = _db.VillaNumbers.ToList();
+        var villaNumbers = _db.VillaNumbers.Include(u => u.Villa).ToList();
         return View(villaNumbers);
     }
 
     public IActionResult Create()
     {
-        IEnumerable<SelectListItem> list = _db.Villas.ToList().Select(u => new SelectListItem{
-            Text = u.Name,
-            Value = u.Id.ToString()
-        });
-        return View();
+        VillaNumberVM villaNumberVM = new()
+        {
+            VillaList = _db.Villas.ToList().Select(u => new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+            })
+        };
+        return View(villaNumberVM);
     }
 
     [HttpPost]

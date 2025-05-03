@@ -21,9 +21,7 @@
         <table class="table table-bordered table-striped">
             <thead>
             <tr>
-                <th>
-                    Villa Name
-                </th>
+                <th>Villa Name</th>
                 <th>Villa Number</th>
                 <th>Special Details</th>
                 <th></th>
@@ -33,7 +31,7 @@
             @foreach (var obj in Model)
             {
                 <tr>
-                    <td>@obj.VillaId</td>
+                    <td>@obj.Villa.Name</td>
                     <td>@obj.VillaNum</td>
                     <td>@obj.SpecialDetails</td>
                     <td>

@@ -1,5 +1,4 @@
-@model VillaNumber
-
+@model VillaNumberVM
 
 <div class="w-100 card border-0 p-4">
     <div class="card-header bg-success bg-gradient ml-0 py-3">
@@ -15,19 +14,23 @@
             <div class="p-3">
                 @* <div asp-validation-summary="All"></div> *@
                 <div class="form-floating py-1 col-12">
-                    <input asp-for="VillaId" class="form-control border shadow"/>
-                    <label asp-for="VillaId" class="ms-2"></label>
-                    <span asp-validation-for="VillaId" class="text-danger"></span>
+                    <select asp-for="@Model.VillaNumber.VillaId" asp-items="@Model.VillaList"
+                            class="form-select border shadow">
+                        <option disabled selected>--Select Villa--</option>
+                    </select>
+
+                    <label asp-for="VillaNumber.VillaId" class="ms-2"></label>
+                    <span asp-validation-for="VillaNumber.VillaId" class="text-danger"></span>
                 </div>
                 <div class="form-floating py-1 col-12">
-                    <input asp-for="VillaNum" class="form-control border shadow"/>
-                    <label asp-for="VillaNum" class="ms-2"></label>
-                    <span asp-validation-for="VillaNum" class="text-danger"></span>
+                    <input asp-for="VillaNumber.VillaNum" class="form-control border shadow"/>
+                    <label asp-for="VillaNumber.VillaNum" class="ms-2"></label>
+                    <span asp-validation-for="VillaNumber.VillaNum" class="text-danger"></span>
                 </div>
                 <div class="form-floating py-1 col-12">
-                    <input asp-for="SpecialDetails" class="form-control border shadow"/>
-                    <label asp-for="SpecialDetails" class="ms-2"></label>
-                    <span asp-validation-for="SpecialDetails" class="text-danger"></span>
+                    <input asp-for="VillaNumber.SpecialDetails" class="form-control border shadow"/>
+                    <label asp-for="VillaNumber.SpecialDetails" class="ms-2"></label>
+                    <span asp-validation-for="VillaNumber.SpecialDetails" class="text-danger"></span>
                 </div>
 
                 <div class="row pt-2">
