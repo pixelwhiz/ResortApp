@@ -10,15 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/ViewModels/VillaNumberVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Delete.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Update.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Domain/ResortApp.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Domain/ResortApp.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/VillaNumberControllercs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/VillaNumberController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/VillaNumberController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/VillaNumberController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Notification.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Notification.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/VillaNumber/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/_ViewImports.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,39 +46,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ResortApp.Web: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.ResortApp.Web: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.hot reload.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ResortApp.Web: http.executor": "Run",
+    ".NET Launch Settings Profile.ResortApp.Web: https.executor": "Run",
+    ".NET Project.Unnamed.executor": "Run",
+    ".NET Project.hot reload.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "discord-application",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver.localdb&quot;,
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb",
+      "sqlserver"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ResortApp.Web: https">
     <configuration name="ResortApp.Web: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" />
@@ -184,6 +181,9 @@
       <workItem from="1746264654488" duration="5400000" />
       <workItem from="1746291509076" duration="538000" />
       <workItem from="1746296216321" duration="1000" />
+      <workItem from="1746298770329" duration="273000" />
+      <workItem from="1746337418197" duration="5037000" />
+      <workItem from="1746342752367" duration="6077000" />
     </task>
     <servers />
   </component>
