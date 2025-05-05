@@ -20,11 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ResortApp.Application\ResortApp.Application.csproj" />
     <ProjectReference Include="..\ResortApp.Domain\ResortApp.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>
