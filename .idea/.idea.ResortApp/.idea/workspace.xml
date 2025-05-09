@@ -17,6 +17,7 @@
       <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/Repository/AmenityRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AmenityController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ResortApp.Web/ViewModels/AmenityVM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Amenity/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Application/Common/Interfaces/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Application/Common/Interfaces/IUnitOfWork.cs" afterDir="false" />
@@ -202,7 +203,7 @@
       <workItem from="1746595987699" duration="7712000" />
       <workItem from="1746612472131" duration="69000" />
       <workItem from="1746678887208" duration="11913000" />
-      <workItem from="1746770404962" duration="3429000" />
+      <workItem from="1746770404962" duration="3730000" />
     </task>
     <servers />
   </component>
