@@ -10,21 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResortApp.Application/Common/Interfaces/IAmenityRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Domain/Entities/Amenity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250509071455_addAmenityToDb.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250509071455_addAmenityToDb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/Repository/AmenityRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AmenityController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/ViewModels/AmenityVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Amenity/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Amenity/Create.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Amenity/Delete.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Amenity/Update.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Application/Common/Interfaces/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Application/Common/Interfaces/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/Repository/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/Repository/UnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +193,9 @@
       <workItem from="1746595987699" duration="7712000" />
       <workItem from="1746612472131" duration="69000" />
       <workItem from="1746678887208" duration="11913000" />
-      <workItem from="1746770404962" duration="3730000" />
+      <workItem from="1746770404962" duration="4524000" />
+      <workItem from="1746808791733" duration="1058000" />
+      <workItem from="1746855053261" duration="5364000" />
     </task>
     <servers />
   </component>
