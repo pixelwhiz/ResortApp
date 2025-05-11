@@ -1,7 +1,5 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ResortApp.Application.Common.Interfaces;
-using ResortApp.Web.Models;
 using ResortApp.Web.ViewModels;
 
 namespace ResortApp.Web.Controllers
@@ -20,7 +18,7 @@ namespace ResortApp.Web.Controllers
         {
             HomeVM homeVM = new()
             {
-                VillaList = _unitOfWork.Villa.GetAll(),
+                VillaList = _unitOfWork.Villa.GetAll(includeProperties: "VillaAmenity"),
                 Nights=1,
                 CheckInDate= DateOnly.FromDateTime(DateTime.Now),
             };
