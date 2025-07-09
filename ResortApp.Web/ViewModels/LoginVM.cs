@@ -2,17 +2,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ResortApp.Web.ViewModels;
 
-public class LoginViewModel
+public class LoginVM
 {
-    [Microsoft.Build.Framework.Required]
+
+    [Required]
     public string Email { get; set; }
 
-
-    [Microsoft.Build.Framework.Required]
+    [Required]
     [DataType(DataType.Password)]
     public string Password { get; set; }
 
     public bool RememberMe { get; set; }
 
     public string? RedirectUrl { get; set; }
+
 }

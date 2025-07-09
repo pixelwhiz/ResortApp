@@ -2,16 +2,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ResortApp.Web.ViewModels;
 
-public class RegisterViewModel
+public class RegisterVM
 {
-    [Microsoft.Build.Framework.Required]
+    [Required]
     public string Email { get; set; }
-
-    [Microsoft.Build.Framework.Required]
+    
+    [Required]
     [DataType(DataType.Password)]
     public string Password { get; set; }
 
-    [Microsoft.Build.Framework.Required]
+    [Required]
     [DataType(DataType.Password)]
     [Compare(nameof(Password))]
     public string ConfirmPassword { get; set; }

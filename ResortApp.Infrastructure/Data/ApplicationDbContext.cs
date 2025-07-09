@@ -3,8 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using ResortApp.Domain.Entities;
 
 namespace ResortApp.Infrastructure.Data {
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
@@ -17,7 +19,7 @@ namespace ResortApp.Infrastructure.Data {
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            
+
             modelBuilder.Entity<Villa>().HasData(
                 new Villa
                 {
