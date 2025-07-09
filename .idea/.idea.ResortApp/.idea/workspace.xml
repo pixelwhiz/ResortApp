@@ -10,9 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ResortApp.Domain/Entities/ApplicationUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250606100601_AddPropertiesToUsersTable.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/20250606100601_AddPropertiesToUsersTable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/ViewModels/LoginViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/ResortApp.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/ResortApp.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +69,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "krasa.IdeaIconPack",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -126,9 +131,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.ResortApp.Web: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.ResortApp.Web: http" />
       <item itemvalue=".NET Launch Settings Profile.ResortApp.Web: https" />
-      <item itemvalue=".NET Launch Settings Profile.ResortApp.Web: IIS Express" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -198,7 +203,17 @@
       <workItem from="1746940178934" duration="4134000" />
       <workItem from="1746976051296" duration="401000" />
       <workItem from="1746976500226" duration="33000" />
-      <workItem from="1747027259863" duration="7823000" />
+      <workItem from="1747027259863" duration="8133000" />
+      <workItem from="1747600421943" duration="168000" />
+      <workItem from="1749203375961" duration="4700000" />
+      <workItem from="1749292310406" duration="1746000" />
+      <workItem from="1749901448297" duration="415000" />
+      <workItem from="1750318695336" duration="211000" />
+      <workItem from="1750972874973" duration="641000" />
+      <workItem from="1751027936455" duration="2756000" />
+      <workItem from="1751094021270" duration="1787000" />
+      <workItem from="1752049946927" duration="1018000" />
+      <workItem from="1752050986288" duration="404000" />
     </task>
     <servers />
   </component>
