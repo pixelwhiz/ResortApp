@@ -10,12 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/ViewModels/LoginViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/ViewModels/LoginVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/ViewModels/RegisterViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/ViewModels/RegisterVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "discord-application",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -212,7 +208,7 @@
       <workItem from="1751027936455" duration="2756000" />
       <workItem from="1751094021270" duration="1787000" />
       <workItem from="1752049946927" duration="1018000" />
-      <workItem from="1752050986288" duration="4780000" />
+      <workItem from="1752050986288" duration="13022000" />
     </task>
     <servers />
   </component>
