@@ -10,8 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +211,7 @@
       <workItem from="1751027936455" duration="2756000" />
       <workItem from="1751094021270" duration="1787000" />
       <workItem from="1752049946927" duration="1018000" />
-      <workItem from="1752050986288" duration="13022000" />
+      <workItem from="1752050986288" duration="18618000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ResortApp.Application.Common.Interfaces;
 using ResortApp.Domain.Entities;
-using ResortApp.Infrastructure.Data;
+using ResortApp.Web.ViewModels;
 
 namespace ResortApp.Web.Controllers;
 
@@ -26,9 +26,15 @@ public class AccountController : Controller
         _signInManager = signInManager;
     }
 
-    public IActionResult Login()
+    public IActionResult Login(string returnUrl=null)
     {
-        return View();
+        returnUrl??= Url.Content("~/");
+        LoginVM loginVM = new()
+        {
+            RedirectUrl = returnUrl
+        };
+
+        return View(loginVM);
     }
 
     public IActionResult Register()
