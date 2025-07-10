@@ -9,13 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" afterDir="false" />
+    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/ViewModels/RegisterVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/ViewModels/RegisterVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Login.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +23,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Runtime/CompilerServices/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/Villa.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/ViewModels/RegisterVM.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -213,8 +212,25 @@
       <workItem from="1751094021270" duration="1787000" />
       <workItem from="1752049946927" duration="1018000" />
       <workItem from="1752050986288" duration="19343000" />
-      <workItem from="1752137817394" duration="1532000" />
+      <workItem from="1752137817394" duration="2616000" />
     </task>
+    <task id="LOCAL-00001" summary="Retrive Roles in Dropdown">
+      <option name="closed" value="true" />
+      <created>1752139518335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752139518335</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1752139541282</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752139541282</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +251,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Retrive Roles in Dropdown" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
