@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ResortApp.Application.Common.Interfaces;
+using ResortApp.Application.Common.Utility;
 using ResortApp.Domain.Entities;
 using ResortApp.Web.ViewModels;
 
@@ -40,10 +41,10 @@ public class AccountController : Controller
 
     public IActionResult Register()
     {
-        if (!_roleManager.RoleExistsAsync("Admin").GetAwaiter().GetResult())
+        if (!_roleManager.RoleExistsAsync(SD.Role_Admin).GetAwaiter().GetResult())
         {
-            _roleManager.CreateAsync(new IdentityRole("Admin")).Wait();
-            _roleManager.CreateAsync(new IdentityRole("Customer")).Wait();
+            _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).Wait();
+            _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).Wait();
         }
 
         RegisterVM registerVM = new()
