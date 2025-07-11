@@ -15,13 +15,16 @@ public class AccountController : Controller
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly RoleManager<IdentityRole> _roleManager;
+    private readonly ILogger<AccountController> _logger;
 
     public AccountController(
         IUnitOfWork unitOfWork,
         UserManager<ApplicationUser> userManager,
         RoleManager<IdentityRole> roleManager,
-        SignInManager<ApplicationUser> signInManager)
+        SignInManager<ApplicationUser> signInManager,
+        ILogger<AccountController> logger)
     {
+        _logger = logger;
         _roleManager = roleManager;
         _unitOfWork = unitOfWork;
         _userManager = userManager;
@@ -47,7 +50,7 @@ public class AccountController : Controller
             _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).Wait();
         }
 
-        RegisterVM registerVM = new()
+        RegisterVM registerVM = new ()
         {
             RoleList = _roleManager.Roles.Select(x => new SelectListItem
             {
@@ -62,6 +65,16 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Register(RegisterVM registerVM)
     {
+        if (!ModelState.IsValid)
+        {
+            registerVM.RoleList = _roleManager.Roles.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Name
+            });
+            return View(registerVM);
+        }
+
         ApplicationUser user = new()
         {
             Name = registerVM.Name,
@@ -93,7 +106,7 @@ public class AccountController : Controller
             }
             else
             {
-                return RedirectToAction(registerVM.RedirectUrl);
+                return LocalRedirect(registerVM.RedirectUrl);
             }
         }
 
@@ -101,7 +114,6 @@ public class AccountController : Controller
         {
             ModelState.AddModelError("", error.Description);
         }
-
 
         registerVM.RoleList = _roleManager.Roles.Select(x => new SelectListItem
         {
@@ -111,6 +123,7 @@ public class AccountController : Controller
 
         return View(registerVM);
     }
+
 
     [HttpPost]
     public async Task<IActionResult> Login(LoginVM loginVM)
