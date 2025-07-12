@@ -1,11 +1,14 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ResortApp.Application.Common.Interfaces;
+using ResortApp.Application.Common.Utility;
 using ResortApp.Domain.Entities;
 using ResortApp.Web.ViewModels;
 
 namespace ResortApp.Web.Controllers;
 
+[Authorize(Roles = SD.Role_Admin)]
 public class AmenityController : Controller
 {
 

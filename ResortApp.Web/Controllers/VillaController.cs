@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ResortApp.Application.Common.Interfaces;
 using ResortApp.Domain.Entities;
 
 namespace ResortApp.Web.Controllers;
 
+[Authorize]
 public class VillaController : Controller
 {
 
