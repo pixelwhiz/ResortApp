@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="initial commit">
+    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="init Access Denied UI">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/AmenityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/AmenityController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +27,17 @@
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/Villa.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AmenityController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/ViewModels/RegisterVM.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Villa/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -50,41 +55,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ResortApp.Web: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.ResortApp.Web: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.hot reload.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.28739694&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ResortApp.Web: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.ResortApp.Web: http.executor": "Run",
+    ".NET Launch Settings Profile.ResortApp.Web: https.executor": "Run",
+    ".NET Project.Unnamed.executor": "Run",
+    ".NET Project.hot reload.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowExplorer.ShowToolbar": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver.localdb&quot;,
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb",
+      "sqlserver"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ResortApp.Web: https">
     <configuration name="ResortApp.Web: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" />
@@ -215,7 +220,8 @@
       <workItem from="1751094021270" duration="1787000" />
       <workItem from="1752049946927" duration="1018000" />
       <workItem from="1752050986288" duration="19343000" />
-      <workItem from="1752137817394" duration="4787000" />
+      <workItem from="1752137817394" duration="15414000" />
+      <workItem from="1752232898176" duration="22440000" />
     </task>
     <task id="LOCAL-00001" summary="Retrive Roles in Dropdown">
       <option name="closed" value="true" />
@@ -249,7 +255,55 @@
       <option name="project" value="LOCAL" />
       <updated>1752140940042</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1752143437079</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752143437079</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Register Post Endpoint">
+      <option name="closed" value="true" />
+      <created>1752143457045</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752143457045</updated>
+    </task>
+    <task id="LOCAL-00007" summary="init Login Post Endpoint">
+      <option name="closed" value="true" />
+      <created>1752144196386</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752144196386</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Register in Action &amp; Check if user is signed in">
+      <option name="closed" value="true" />
+      <created>1752277862148</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752277862148</updated>
+    </task>
+    <task id="LOCAL-00009" summary="init Logout in action">
+      <option name="closed" value="true" />
+      <created>1752278115898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752278115898</updated>
+    </task>
+    <task id="LOCAL-00010" summary="init Access Denied UI">
+      <option name="closed" value="true" />
+      <created>1752279203616</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752279203616</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +327,12 @@
     <MESSAGE value="Retrive Roles in Dropdown" />
     <MESSAGE value="Say NO to Magic Strings" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Register Post Endpoint" />
+    <MESSAGE value="init Login Post Endpoint" />
+    <MESSAGE value="Register in Action &amp; Check if user is signed in" />
+    <MESSAGE value="init Logout in action" />
+    <MESSAGE value="init Access Denied UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="init Access Denied UI" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
