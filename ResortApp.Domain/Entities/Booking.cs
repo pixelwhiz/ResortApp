@@ -13,7 +13,7 @@ public class Booking
     public string UserId { get; set; }
 
     [ForeignKey("UserId")]
-    public string ApplicationUser { get; set; }
+    public ApplicationUser user { get; set; }
 
     [Required]
     public int VillaId { get; set; }
