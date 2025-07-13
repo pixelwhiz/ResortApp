@@ -26,19 +26,6 @@ namespace ResortApp.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(HomeVM homeVM)
-        {
-            homeVM.VillaList = _unitOfWork.Villa.GetAll(includeProperties: "VillaAmenity");
-            foreach (var villa in homeVM.VillaList)
-            {
-                if (villa.Id % 2 == 0)
-                {
-                    villa.IsAvailable = false;
-                }
-            }
-            return View(homeVM);
-        }
-
         public IActionResult GetVIllasByDate(int nights, DateOnly checkInDate)
         {
             Thread.Sleep(2000);
