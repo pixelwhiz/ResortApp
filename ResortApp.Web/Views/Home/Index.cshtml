@@ -25,12 +25,7 @@
         </button>
     </div>
     <form method="post" style="background-color:black"
-          asp-action="GetVIllasByDate"
-          data-ajax-method="pos"
-          data-ajax="true"
-          data-ajax-mode="replace"
-          data-ajax-update="#VillasList"
-    >
+          asp-action="GetVIllasByDate">
         <div class="row p-0 mx-0 py-4">
 
             <div class="col-12 col-md-5  offset-md-1 pl-2  pr-2 pr-md-0">
@@ -70,18 +65,34 @@
 @section scripts {
     <script>
         function fnLoadVillaList() {
+            $('.spinner').show();
             var objData = {
                 checkInDate: $("#CheckInDate").val(),
-                nights: $("#Nights").val
+                nights: $("#Nights").val()
             };
 
             $.ajax ({
-                url: "@Url.Action("GetVIllasByDate", "Home")",
-                data: objData,
                 type: "POST",
+                data: objData,
+                url: "@Url.Action("GetVIllasByDate", "Home")",
                 success: function (data) {
                     $("#VillasList").empty();
                     $("#VillasList").html(data);
+                    $('.spinner').hide();
+                },
+
+                failure: function (response) {
+                    $('.spinner').hide();
+                    alert(response.responseText);
+                },
+
+                error: function (response) {
+                    $('.spinner').hide();
+                    alert(response.responseText);
+                },
+
+                complete: function () {
+                    $('.loading.spinner').hide();
                 }
             });
         }
