@@ -28,7 +28,6 @@ namespace ResortApp.Web.Controllers
         [HttpPost]
         public IActionResult GetVIllasByDate(int nights, DateOnly checkInDate)
         {
-            Thread.Sleep(2000);
             var villaList = _unitOfWork.Villa.GetAll(includeProperties: "VillaAmenity").ToList();
             foreach (var villa in villaList)
             {
