@@ -24,7 +24,7 @@ public class BookingController : Controller
             Nights = nights,
             CheckOutDate = checkInDate.AddDays(nights),
         };
-
+        booking.TotalCost = booking.Villa.Price * nights;
         return View(booking);
     }
 }
