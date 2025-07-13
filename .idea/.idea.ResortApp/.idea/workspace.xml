@@ -9,17 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="Move VillaList to Partial View">
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/libman.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/jquery-ajax-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/js/jquery.unobtrusive-ajax.min.js" afterDir="false" />
+    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="Spinner in Action">
+      <change afterPath="$PROJECT_DIR$/ResortApp.Domain/Entities/Booking.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_VillaList.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_VillaList.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JSON File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,6 +38,8 @@
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -62,41 +57,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ResortApp.Web: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.ResortApp.Web: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.ResortApp.Web: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.hot reload.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ResortApp.Web: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.ResortApp.Web: http.executor": "Run",
+    ".NET Launch Settings Profile.ResortApp.Web: https.executor": "Run",
+    ".NET Project.Unnamed.executor": "Run",
+    ".NET Project.hot reload.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowExplorer.ShowToolbar": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver.localdb&quot;,
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb",
+      "sqlserver"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ResortApp.Web: https">
     <configuration name="ResortApp.Web: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" />
@@ -229,7 +225,7 @@
       <workItem from="1752050986288" duration="19343000" />
       <workItem from="1752137817394" duration="15414000" />
       <workItem from="1752232898176" duration="25116000" />
-      <workItem from="1752391836994" duration="11304000" />
+      <workItem from="1752391836994" duration="17975000" />
     </task>
     <task id="LOCAL-00001" summary="Retrive Roles in Dropdown">
       <option name="closed" value="true" />
@@ -367,7 +363,31 @@
       <option name="project" value="LOCAL" />
       <updated>1752396891809</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Reload Partial View without refreshing page">
+      <option name="closed" value="true" />
+      <created>1752412821398</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1752412821398</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Without unobstrusive library">
+      <option name="closed" value="true" />
+      <created>1752419194073</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1752419194073</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Spinner in Action">
+      <option name="closed" value="true" />
+      <created>1752422398249</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1752422398249</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +422,10 @@
     <MESSAGE value="fix typo" />
     <MESSAGE value="Add Villa Availability" />
     <MESSAGE value="Move VillaList to Partial View" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move VillaList to Partial View" />
+    <MESSAGE value="Reload Partial View without refreshing page" />
+    <MESSAGE value="Without unobstrusive library" />
+    <MESSAGE value="Spinner in Action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spinner in Action" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
