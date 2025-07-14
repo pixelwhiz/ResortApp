@@ -2,6 +2,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ResortApp.Application.Common.Interfaces;
+using ResortApp.Application.Common.Utility;
 using ResortApp.Domain.Entities;
 
 namespace ResortApp.Web.Controllers;
@@ -17,26 +18,24 @@ public class BookingController : Controller
     }
 
     [Authorize]
-    public IActionResult FinalizeBooking(int villaId, DateOnly checkInDate, int nights)
+    [HttpPost]
+    public IActionResult FinalizeBooking(Booking booking)
     {
-        var claimsIdentity = (ClaimsIdentity)User.Identity;
-        var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+        var villa = _unitOfWork.Villa.Get(u => u.Id == booking.VillaId);
+        booking.TotalCost = booking.Villa.Price * booking.Nights;
 
-        ApplicationUser user = _unitOfWork.User.Get(u => u.Id == userId);
+        booking.Status = SD.StatusPending;
+        booking.BookingDate = DateTime.Now;
 
-        Booking booking = new()
-        {
-            VillaId = villaId,
-            Villa = _unitOfWork.Villa.Get(u => u.Id == villaId, includeProperties: "VillaAmenity"),
-            CheckInDate = checkInDate,
-            Nights = nights,
-            CheckOutDate = checkInDate.AddDays(nights),
-            UserId = userId,
-            Phone = user.PhoneNumber,
-            Email = user.Email,
-            Name = user.Name,
-        };
-        booking.TotalCost = booking.Villa.Price * nights;
-        return View(booking);
+        _unitOfWork.Booking.Add(booking);
+        _unitOfWork.Save();
+        return RedirectToAction(nameof(BookingConfirmation), new { bookingId = booking.Id });
     }
+
+    [Authorize]
+    public IActionResult BookingConfirmation(int bookingId)
+    {
+        return View(bookingId);
+    }
+
 }
