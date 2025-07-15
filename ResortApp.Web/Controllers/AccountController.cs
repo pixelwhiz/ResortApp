@@ -15,16 +15,13 @@ public class AccountController : Controller
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly RoleManager<IdentityRole> _roleManager;
-    private readonly ILogger<AccountController> _logger;
 
     public AccountController(
         IUnitOfWork unitOfWork,
         UserManager<ApplicationUser> userManager,
         RoleManager<IdentityRole> roleManager,
-        SignInManager<ApplicationUser> signInManager,
-        ILogger<AccountController> logger)
+        SignInManager<ApplicationUser> signInManager)
     {
-        _logger = logger;
         _roleManager = roleManager;
         _unitOfWork = unitOfWork;
         _userManager = userManager;
@@ -148,7 +145,7 @@ public class AccountController : Controller
                 }
                 else
                 {
-                    return RedirectToAction(loginVM.RedirectUrl);
+                    return LocalRedirect(loginVM.RedirectUrl);
                 }
             }
             else
