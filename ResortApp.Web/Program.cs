@@ -4,6 +4,7 @@ using ResortApp.Application.Common.Interfaces;
 using ResortApp.Domain.Entities;
 using ResortApp.Infrastructure.Data;
 using ResortApp.Infrastructure.Migrations.Repository;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,9 @@ builder.Services.Configure<IdentityOptions>(option =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
+
+StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
+
 
 if (!app.Environment.IsDevelopment())
 {

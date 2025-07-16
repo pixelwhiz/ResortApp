@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="Load user details">
-      <change afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Booking/BookingConfirmation.cshtml" afterDir="false" />
+    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Booking/FinalizeBooking.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Booking/FinalizeBooking.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +32,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Runtime/CompilerServices/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Common/Interfaces/IBookingRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Common/Utility/SD.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/Villa.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Infrastructure/Migrations/Repository/BookingRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Infrastructure/Migrations/Repository/BookingRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Booking/FinalizeBooking.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Booking/FinalizeBooking.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Booking/FinalizeBooking.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -230,7 +228,9 @@
       <workItem from="1752391836994" duration="20461000" />
       <workItem from="1752428526212" duration="20200000" />
       <workItem from="1752481170752" duration="8140000" />
-      <workItem from="1752575463947" duration="9541000" />
+      <workItem from="1752575463947" duration="11567000" />
+      <workItem from="1752654008987" duration="1574000" />
+      <workItem from="1752669901717" duration="6937000" />
     </task>
     <task id="LOCAL-00001" summary="Retrive Roles in Dropdown">
       <option name="closed" value="true" />
@@ -496,7 +496,39 @@
       <option name="project" value="LOCAL" />
       <updated>1752586864616</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1752587793826</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1752587793826</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fix bugs with Finalize Booking">
+      <option name="closed" value="true" />
+      <created>1752587826016</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1752587826016</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix typo">
+      <option name="closed" value="true" />
+      <created>1752672728165</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1752672728165</updated>
+    </task>
+    <task id="LOCAL-00037" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1752673233518</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1752673233518</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +549,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Register Post Endpoint" />
     <MESSAGE value="init Login Post Endpoint" />
     <MESSAGE value="Register in Action &amp; Check if user is signed in" />
     <MESSAGE value="init Logout in action" />
@@ -531,7 +562,6 @@
     <MESSAGE value="Without unobstrusive library" />
     <MESSAGE value="Spinner in Action" />
     <MESSAGE value="Create Booking Model" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="Create Booking Table and Booking Repository" />
     <MESSAGE value="Get Action Finalize Booking" />
     <MESSAGE value="Clean UP" />
@@ -540,9 +570,11 @@
     <MESSAGE value="Add Application User Repository" />
     <MESSAGE value="Add Booking Status" />
     <MESSAGE value="Finalize Booking Post" />
-    <MESSAGE value="fix typo" />
     <MESSAGE value="Load user details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Load user details" />
+    <MESSAGE value="Fix bugs with Finalize Booking" />
+    <MESSAGE value="fix typo" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
