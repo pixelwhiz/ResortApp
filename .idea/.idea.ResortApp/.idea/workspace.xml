@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="initial commit">
+    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="Stripe Keys Configuration">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +39,8 @@
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Infrastructure/Migrations/Repository/BookingRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Infrastructure/Migrations/Repository/BookingRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -230,7 +231,7 @@
       <workItem from="1752481170752" duration="8140000" />
       <workItem from="1752575463947" duration="11567000" />
       <workItem from="1752654008987" duration="1574000" />
-      <workItem from="1752669901717" duration="6937000" />
+      <workItem from="1752669901717" duration="8470000" />
     </task>
     <task id="LOCAL-00001" summary="Retrive Roles in Dropdown">
       <option name="closed" value="true" />
@@ -528,7 +529,31 @@
       <option name="project" value="LOCAL" />
       <updated>1752673233518</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add Stripe Keys and Nuget Package">
+      <option name="closed" value="true" />
+      <created>1752677092432</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1752677092432</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add Stripe Keys and Nuget Package">
+      <option name="closed" value="true" />
+      <created>1752677191915</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1752677191915</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Stripe Keys Configuration">
+      <option name="closed" value="true" />
+      <created>1752678344887</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1752678344887</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,8 +574,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="init Login Post Endpoint" />
-    <MESSAGE value="Register in Action &amp; Check if user is signed in" />
     <MESSAGE value="init Logout in action" />
     <MESSAGE value="init Access Denied UI" />
     <MESSAGE value="initial Authorization with Roles" />
@@ -574,7 +597,9 @@
     <MESSAGE value="Fix bugs with Finalize Booking" />
     <MESSAGE value="fix typo" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Add Stripe Keys and Nuget Package" />
+    <MESSAGE value="Stripe Keys Configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stripe Keys Configuration" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
