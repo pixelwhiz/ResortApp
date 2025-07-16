@@ -12,7 +12,7 @@ using ResortApp.Infrastructure.Data;
 namespace ResortApp.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250713182638_AddBookingToDb")]
+    [Migration("20250716174907_AddBookingToDb")]
     partial class AddBookingToDb
     {
         /// <inheritdoc />
@@ -602,21 +602,21 @@ namespace ResortApp.Infrastructure.Migrations
 
             modelBuilder.Entity("ResortApp.Domain.Entities.Booking", b =>
                 {
-                    b.HasOne("ResortApp.Domain.Entities.ApplicationUser", "user")
+                    b.HasOne("ResortApp.Domain.Entities.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ResortApp.Domain.Entities.Villa", "villa")
+                    b.HasOne("ResortApp.Domain.Entities.Villa", "Villa")
                         .WithMany()
                         .HasForeignKey("VillaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("user");
+                    b.Navigation("User");
 
-                    b.Navigation("villa");
+                    b.Navigation("Villa");
                 });
 
             modelBuilder.Entity("ResortApp.Domain.Entities.VillaNumber", b =>
