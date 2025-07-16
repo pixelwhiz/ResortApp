@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using ResortApp.Application.Common.Interfaces;
 using ResortApp.Application.Common.Utility;
 using ResortApp.Domain.Entities;
+using Stripe;
+using Stripe.Checkout;
+using SessionCreateOptions = Stripe.FinancialConnections.SessionCreateOptions;
 
 namespace ResortApp.Web.Controllers;
 
@@ -54,7 +57,37 @@ public class BookingController : Controller
 
         _unitOfWork.Booking.Add(booking);
         _unitOfWork.Save();
-        return RedirectToAction(nameof(BookingConfirmation), new { bookingId = booking.Id });
+
+
+        var domain = Request.Scheme + "://" + Request.Host.Value + "/";
+        var options = new Stripe.Checkout.SessionCreateOptions()
+        {
+            LineItems = new List<SessionLineItemOptions>(),
+            Mode = "payment",
+            SuccessUrl = domain + $"/booking/BookingConfirmation?bookingId={booking.Id}",
+            CancelUrl = domain + $"/booking/FinalizeBooking?villaId={booking.VillaId}&checkInDate={booking.ActualCheckInDate}&nights={booking.Nights}"
+        };
+
+        options.LineItems.Add(new SessionLineItemOptions()
+        {
+            PriceData = new SessionLineItemPriceDataOptions()
+            {
+                UnitAmount = (long)(booking.TotalCost * 100),
+                Currency = "usd",
+                ProductData = new SessionLineItemPriceDataProductDataOptions()
+                {
+                    Name = villa.Name,
+                    Images = new List<string> { domain + villa.ImageUrl }
+                },
+            },
+            Quantity = 1,
+        });
+
+        var service = new Stripe.Checkout.SessionService();
+        Stripe.Checkout.Session session = service.Create(options);
+
+        Response.Headers.Add("Location", session.Url);
+        return new StatusCodeResult(303);
     }
 
     [Authorize]
