@@ -19,6 +19,7 @@ public class BookingController : Controller
         _unitOfWork = unitOfWork;
     }
 
+    [Authorize]
     public IActionResult Index()
     {
         return View();
@@ -135,9 +136,9 @@ public class BookingController : Controller
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
 
-            objBookings = _unitOfWork.Booking.GetAll(u => u.UserId == userId, includeProperties: "User,Villa");
+            objBookings = _unitOfWork.Booking
+                .GetAll(u => u.UserId == userId, includeProperties: "User,Villa");
         }
-
         return Json(new { data = objBookings });
     }
     #endregion
