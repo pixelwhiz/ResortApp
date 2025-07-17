@@ -124,7 +124,7 @@ public class BookingController : Controller
     #region API Calls
     [HttpGet]
     [Authorize]
-    public IActionResult GetAll()
+    public IActionResult GetAll(string status)
     {
         IEnumerable<Booking> objBookings;
         if (User.IsInRole(SD.Role_Admin))
@@ -138,6 +138,12 @@ public class BookingController : Controller
 
             objBookings = _unitOfWork.Booking
                 .GetAll(u => u.UserId == userId, includeProperties: "User,Villa");
+        }
+
+        if (!string.IsNullOrEmpty(status))
+        {
+            objBookings = objBookings.Where(u => u.Status.ToLower().Equals(status.ToLower()));
+
         }
         return Json(new { data = objBookings });
     }
