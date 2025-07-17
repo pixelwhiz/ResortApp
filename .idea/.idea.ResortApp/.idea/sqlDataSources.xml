@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="c1a65773-c0a7-4e4c-b018-c8ce9ed48d06" name="ResortApp@127.0.0.1 Mapping">
+      <data-sources db="b0ed19a9-123e-4bbf-a506-919c284f7a50" />
+      <scope>
+        <node kind="database" qname="ResortApp" />
+      </scope>
+    </mapping>
+  </component>
+</project>
