@@ -143,6 +143,27 @@ public class BookingController : Controller
     {
         _unitOfWork.Booking.UpdateStatus(booking.Id, SD.StatusCheckedIn, booking.VillaNumber);
         _unitOfWork.Save();
+        TempData["Success"] = "Booking Updated Successfully.";
+        return RedirectToAction(nameof(BookingDetails), new { bookingId = booking.Id });
+    }
+
+    [HttpPost]
+    [Authorize(Roles = SD.Role_Admin)]
+    public IActionResult CheckOut(Booking booking)
+    {
+        _unitOfWork.Booking.UpdateStatus(booking.Id, SD.StatusCompleted, booking.VillaNumber);
+        _unitOfWork.Save();
+        TempData["Success"] = "Booking Completed Successfully.";
+        return RedirectToAction(nameof(BookingDetails), new { bookingId = booking.Id });
+    }
+
+    [HttpPost]
+    [Authorize(Roles = SD.Role_Admin)]
+    public IActionResult CancelBooking(Booking booking)
+    {
+        _unitOfWork.Booking.UpdateStatus(booking.Id, SD.StatusCancelled, booking.VillaNumber);
+        _unitOfWork.Save();
+        TempData["Success"] = "Booking Cancelled Successfully.";
         return RedirectToAction(nameof(BookingDetails), new { bookingId = booking.Id });
     }
 
