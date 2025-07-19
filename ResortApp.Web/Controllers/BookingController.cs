@@ -39,7 +39,7 @@ public class BookingController : Controller
             Villa = _unitOfWork.Villa.Get(u => u.Id == villaId, includeProperties: "VillaAmenity"),
             CheckInDate = checkInDate,
             Nights = nights,
-            CheckOutDate = checkInDate.AddMonths(nights),
+            CheckOutDate = checkInDate.AddDays(nights),
             UserId = userId,
             Phone = user.PhoneNumber,
             Email = user.Email,
@@ -111,7 +111,7 @@ public class BookingController : Controller
 
             if (session.PaymentStatus == "paid")
             {
-                _unitOfWork.Booking.UpdateStatus(bookingFromDb.Id, SD.StatusApproved, 0);
+                _unitOfWork.Booking.UpdateStatus(bookingFromDb.Id, SD.StatusApproved, bookingFromDb.VillaNumber);
                 _unitOfWork.Booking.UpdateStripePaymentID(bookingFromDb.Id, session.Id, session.PaymentIntentId);
                 _unitOfWork.Save();
             }
@@ -130,8 +130,8 @@ public class BookingController : Controller
         if (bookingFromDb.VillaNumber == 0 && bookingFromDb.Status == SD.StatusApproved)
         {
             var availableVillaNumber = AssignAvailableVillaNumberByVilla(bookingFromDb.VillaId);
-            bookingFromDb.VillaNumbers =
-                _unitOfWork.VillaNumber.GetAll(u => u.VillaId == bookingFromDb.VillaId && availableVillaNumber.Any(x => x == u.VillaNum)).ToList();
+            bookingFromDb.VillaNumbers = _unitOfWork.VillaNumber.GetAll(u => u.VillaId == bookingFromDb.VillaId
+                && availableVillaNumber.Any(x => x == u.VillaNum)).ToList();
         }
 
         return View(bookingFromDb);
@@ -161,7 +161,7 @@ public class BookingController : Controller
     [Authorize(Roles = SD.Role_Admin)]
     public IActionResult CancelBooking(Booking booking)
     {
-        _unitOfWork.Booking.UpdateStatus(booking.Id, SD.StatusCancelled, booking.VillaNumber);
+        _unitOfWork.Booking.UpdateStatus(booking.Id, SD.StatusCancelled, 0);
         _unitOfWork.Save();
         TempData["Success"] = "Booking Cancelled Successfully.";
         return RedirectToAction(nameof(BookingDetails), new { bookingId = booking.Id });
