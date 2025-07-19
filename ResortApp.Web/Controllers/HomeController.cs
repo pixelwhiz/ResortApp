@@ -34,8 +34,6 @@ namespace ResortApp.Web.Controllers
             var bookedVillas = _unitOfWork.Booking
                 .GetAll(u => u.Status == SD.StatusApproved || u.Status == SD.StatusCheckedIn).ToList();
 
-
-
             foreach (var villa in villaList)
             {
                 int roomAvailable =
