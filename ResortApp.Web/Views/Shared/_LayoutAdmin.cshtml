@@ -22,14 +22,56 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
+            <partial name="_LoginPartialAdmin" />
         </nav>
     </header>
     <div class="container-fluid">
         <div class="loading spinner" style="display: none;"></div>
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
-                <div class="position-sticky pt-3">
-                    @* Elements *@
+                <div class="position-static pt-3">
+                    <ul class="navbar-nav">
+                        <li>
+                            <div class="text-muted small fw-bold text-uppercase px-3">
+                                Menu
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Dashboard" asp-action="Index">
+                                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="text-muted small fw-bold text-uppercase px-3 mt-2">
+                                Content Management
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Villa" asp-action="Index">
+                                <span class="me-2"><i class="bi bi-house-door"></i></span>
+                                <span>Villa</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="VillaNumber" asp-action="Index">
+                                <span class="me-2"><i class="bi bi-list-ol"></i></span>
+                                <span>VillaNumber</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Amenity" asp-action="Index">
+                                <span class="me-2"><i class="bi bi-building"></i></span>
+                                <span>Amenity</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Booking" asp-action="Index" asp-route-status="@SD.StatusApproved">
+                                <span class="me-2"><i class="bi bi-journal-plus"></i></span>
+                                <span>Booking</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -59,35 +101,3 @@
 </body>
 </html>
 
-
-
-@* <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between"> *@
-    @* <ul class="navbar-nav flex-grow-1"> *@
-        @* <li class="nav-item"> *@
-            @* <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a> *@
-        @* </li> *@
-        @* @if (User.IsInRole(SD.Role_Admin)) *@
-        @* { *@
-            @* <li class="nav-item dropdown"> *@
-                @* <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> *@
-                    @* Content Management *@
-                @* </a> *@
-
-                @* <ul class="dropdown-menu"> *@
-                    @* <li><a class="dropdown-item" asp-controller="Villa" asp-action="Index">Villa</a></li> *@
-                    @* <li><a class="dropdown-item" asp-controller="VillaNumber" asp-action="Index">VillaNumber</a></li> *@
-                    @* <li><hr class="dropdown-divider"></li> *@
-                    @* <li><a class="dropdown-item" asp-controller="Amenity" asp-action="Index">Amenity</a></li> *@
-                    @* <li><a class="dropdown-item" asp-controller="Booking" asp-action="Index" asp-route-status="@SD.StatusApproved">Booking</a></li> *@
-                @* </ul> *@
-            @* </li> *@
-        @* } *@
-        @* else *@
-        @* { *@
-            @* <li class="nav-item"> *@
-                @* <a class="nav-link" asp-area="" asp-controller="Booking" asp-action="Index">Mange Bookings</a> *@
-            @* </li> *@
-        @* } *@
-    @* </ul> *@
-    @* <partial name="_LoginPartial" /> *@
-@* </div> *@
