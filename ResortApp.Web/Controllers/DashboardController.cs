@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ResortApp.Application.Common.Interfaces;
 using ResortApp.Application.Common.Utility;
+using ResortApp.Web.ViewModels;
 
 namespace ResortApp.Web.Controllers;
 
@@ -34,6 +35,22 @@ public class DashboardController : Controller
         var countByPreviousMonth =
             totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= currentMonthStartDate);
 
+        RadialBarChartVM radialBarChartVM = new();
+
+        int increaseDecreaseRatio = 100;
+
+        if (countByPreviousMonth != 0)
+        {
+            increaseDecreaseRatio =
+                Convert.ToInt32((countByCurrentMonth - countByPreviousMonth) / countByPreviousMonth * 100);
+        }
+
+        radialBarChartVM.TotalCount = totalBookings.Count();
+        radialBarChartVM.CountInCurrentMonth = countByCurrentMonth;
+        radialBarChartVM.HasRatioIncreased = currentMonthStartDate > previousMonthStartDate;
+        radialBarChartVM.Series = new int[] { increaseDecreaseRatio };
+
+        return Json(radialBarChartVM);
     }
 
 }
