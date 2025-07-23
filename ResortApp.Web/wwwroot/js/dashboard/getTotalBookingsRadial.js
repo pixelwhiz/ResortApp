@@ -57,8 +57,7 @@ function loadRadialBarChart(id, data) {
 
         labels: [""]
     };
-
+    
     var chart = new ApexCharts(document.querySelector("#"+id), options);
-
     chart.render();
 }
