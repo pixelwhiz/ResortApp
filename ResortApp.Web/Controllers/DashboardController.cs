@@ -36,7 +36,7 @@ public class DashboardController : Controller
         return Json(GetRadialChartDataModel(totalBookings.Count(), countByCurrentMonth, countByPreviousMonth));
     }
 
-    public async Task<IActionResult> GetRegisteredUserChartDataAsync()
+    public async Task<IActionResult> GetRegisteredUserChartData()
     {
         var totalUsers = _unitOfWork.User.GetAll();
         var countByCurrentMonth =
@@ -47,7 +47,7 @@ public class DashboardController : Controller
         return Json(GetRadialChartDataModel(totalUsers.Count(), countByCurrentMonth, countByPreviousMonth));
     }
 
-    public async Task<IActionResult> GetRevenueChartDataAsync()
+    public async Task<IActionResult> GetRevenueChartData()
     {
         var totalBookings = _unitOfWork.Booking.GetAll(u => u.Status != SD.StatusPending || u.Status == SD.StatusCancelled);
         var totalReveneue = Convert.ToInt32(totalBookings.Sum(u => u.TotalCost));
