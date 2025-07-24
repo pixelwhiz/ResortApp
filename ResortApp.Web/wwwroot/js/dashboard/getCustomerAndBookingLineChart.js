@@ -28,18 +28,43 @@ function loadLineChart(id, data) {
         },
 
         stroke: {
-            show: false
+            curve: 'smooth',
+            width: 2
         },
 
         markers: {
-            size: 0,
+            size: 3,
+            strokeWidth: 0,
             hover: {
-                sizeOffset: 6
+                size: 7
             }
         },
 
         xaxis: {
             categories: data.categories,
+            labels: {
+                style: {
+                    colors: "#ddd",
+                },
+            },
+        },
+
+        yaxis: {
+            labels: {
+                style: {
+                    colors: "#fff",
+                },
+            }
+        },
+
+        legend: {
+            labels: {
+                colors: "#fff",
+            },
+        },
+
+        tooltip: {
+            theme: 'dark'
         },
 
     };
