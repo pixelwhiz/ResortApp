@@ -28,29 +28,42 @@ public class DashboardController : Controller
     {
         var totalBookings = _unitOfWork.Booking.GetAll(u => u.Status != SD.StatusPending
         || u.Status == SD.StatusCancelled);
-
         var countByCurrentMonth =
             totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= DateTime.Now);
-
         var countByPreviousMonth =
             totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= currentMonthStartDate);
 
+        return Json(GetRadialChartDataModel(totalBookings.Count(), countByCurrentMonth, countByPreviousMonth));
+    }
+
+    public async Task<IActionResult> GetRegisteredUserChartDataAsync()
+    {
+        var totalUsers = _unitOfWork.User.GetAll();
+        var countByCurrentMonth =
+            totalUsers.Count(u => u.CreatedAt >= currentMonthStartDate && u.CreatedAt <= DateTime.Now);
+        var countByPreviousMonth =
+            totalUsers.Count(u => u.CreatedAt >= currentMonthStartDate && u.CreatedAt <= currentMonthStartDate);
+
+        return Json(GetRadialChartDataModel(totalUsers.Count(), countByCurrentMonth, countByPreviousMonth));
+    }
+
+    private static RadialBarChartVM GetRadialChartDataModel(int totalCount, double currentMonthCount, double prevMonthCount)
+    {
         RadialBarChartVM radialBarChartVM = new();
 
         int increaseDecreaseRatio = 100;
 
-        if (countByPreviousMonth != 0)
+        if (prevMonthCount != 0)
         {
             increaseDecreaseRatio =
-                Convert.ToInt32((countByCurrentMonth - countByPreviousMonth) / countByPreviousMonth * 100);
+                Convert.ToInt32((currentMonthCount - prevMonthCount) / prevMonthCount * 100);
         }
 
-        radialBarChartVM.TotalCount = totalBookings.Count();
-        radialBarChartVM.CountInCurrentMonth = countByCurrentMonth;
-        radialBarChartVM.HasRatioIncreased = currentMonthStartDate > previousMonthStartDate;
+        radialBarChartVM.TotalCount = totalCount;
+        radialBarChartVM.CountInCurrentMonth = Convert.ToInt32(currentMonthCount);
+        radialBarChartVM.HasRatioIncreased = currentMonthCount > prevMonthCount;
         radialBarChartVM.Series = new int[] { increaseDecreaseRatio };
-
-        return Json(radialBarChartVM);
+        return radialBarChartVM;
     }
 
 }
