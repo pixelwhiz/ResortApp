@@ -10,6 +10,7 @@ using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
 using Syncfusion.DocIORenderer;
 using Syncfusion.Drawing;
+using Syncfusion.Pdf;
 
 namespace ResortApp.Web.Controllers;
 
@@ -162,7 +163,7 @@ public class BookingController : Controller
 
     [HttpPost]
     [Authorize]
-    public IActionResult GenerateInvoice(int id)
+    public IActionResult GenerateInvoice(int id, string downloadType)
     {
         string basePath = _webHostEnvironment.WebRootPath;
         WordDocument document = new WordDocument();
@@ -259,10 +260,22 @@ public class BookingController : Controller
 
         using DocIORenderer renderer = new();
         MemoryStream stream = new();
-        document.Save(stream, FormatType.Docx);
-        stream.Position = 0;
 
-        return File(stream, "application/docx", "BookingDetails.dox");
+        if (downloadType == "word")
+        {
+            document.Save(stream, FormatType.Docx);
+            stream.Position = 0;
+
+            return File(stream, "application/docx", "BookingDetails.docx");
+        }
+        else
+        {
+            PdfDocument pdfDocument = renderer.ConvertToPDF(document);
+            pdfDocument.Save(stream);
+            stream.Position = 0;
+
+            return File(stream, "application/pdf", "BookingDetails.pdf");
+        }
     }
 
     [HttpPost]
