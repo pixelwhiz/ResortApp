@@ -73,6 +73,9 @@
                             <partial name="_VillaDetail" model="@villa" />
                         </div>
                         <div class="modal-footer">
+                            <button asp-action="GeneratePPTExport" asp-controller="Home" asp-route-id="@villa.Id" type="submit" class="btn btn-outline-warning">
+                                <i class="bi bi-file-earmark-ppt"></i> Download Villa PPT
+                            </button>
                             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
                         </div>
 
