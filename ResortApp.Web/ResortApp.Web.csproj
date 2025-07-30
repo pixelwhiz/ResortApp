@@ -14,9 +14,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.6.23329.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
     <PackageReference Include="Stripe.net" Version="41.27.0" />
-    <PackageReference Include="Syncfusion.DocIO.Net.Core" Version="30.1.41" />
-    <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="30.1.41" />
-    <PackageReference Include="Syncfusion.Licensing" Version="30.1.41" />
+    <PackageReference Include="Syncfusion.DocIO.Net.Core" Version="30.1.42" />
+    <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="30.1.42" />
+    <PackageReference Include="Syncfusion.Licensing" Version="30.1.42" />
+    <PackageReference Include="Syncfusion.Presentation.Net.Core" Version="30.1.42" />
   </ItemGroup>
 
   <ItemGroup>
