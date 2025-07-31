@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ResortApp.Application.Common.Interfaces;
 using ResortApp.Application.Common.Utility;
 using ResortApp.Application.Services.Implementation;
+using ResortApp.Application.Services.Interface;
 using ResortApp.Web.ViewModels;
 
 namespace ResortApp.Web.Controllers;
@@ -9,9 +10,9 @@ namespace ResortApp.Web.Controllers;
 public class DashboardController : Controller
 {
 
-    private readonly DashboardService _dashboardService;
+    private readonly IDashboardService _dashboardService;
 
-    public DashboardController(DashboardService dashboardService)
+    public DashboardController(IDashboardService dashboardService)
     {
         _dashboardService = dashboardService;
     }
