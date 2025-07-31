@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ResortApp.Application.Common.Interfaces;
+using ResortApp.Application.Services.Implementation;
+using ResortApp.Application.Services.Interface;
 using ResortApp.Domain.Entities;
 using ResortApp.Infrastructure.Data;
 using ResortApp.Infrastructure.Migrations.Repository;
@@ -30,7 +32,7 @@ builder.Services.Configure<IdentityOptions>(option =>
 
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 var app = builder.Build();
 
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
