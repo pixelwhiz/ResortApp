@@ -229,7 +229,7 @@ public class BookingController : Controller
         row0.Cells[2].AddParagraph().AppendText("PRICE PER NIGHT");
         row0.Cells[3].AddParagraph().AppendText("TOTAL");
         row0.Cells[3].Width = 80;
-        
+
         WTableRow row1 = table.Rows[1];
         row1.Cells[0].AddParagraph().AppendText(bookingFromDb.Nights.ToString());
         row1.Cells[0].Width = 80;
