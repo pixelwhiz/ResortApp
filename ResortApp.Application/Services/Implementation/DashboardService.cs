@@ -32,7 +32,6 @@ public class DashboardService : IDashboardService
     public async Task<PieChartDto> GetBookingPieChartData()
     {
         var totalBookings = _unitOfWork.Booking.GetAll(u => u.BookingDate >= DateTime.Now.AddDays(-30) && (u.Status != SD.StatusPending || u.Status == SD.StatusCancelled));
-
         var customerWithOneBooking = totalBookings.GroupBy(b => b.UserId).Where(x => x.Count() == 1).Select(x => x.Key).ToList();
 
         int bookingsByNewCustomer = customerWithOneBooking.Count();
