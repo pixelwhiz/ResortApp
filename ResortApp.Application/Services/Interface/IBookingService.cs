@@ -1,0 +1,10 @@
+using ResortApp.Domain.Entities;
+
+namespace ResortApp.Application.Services.Interface;
+
+public interface IBookingService
+{
+    void CreateBooking(Booking booking);
+    Booking GetBookingById(int bookingId);
+    IEnumerable<Booking> GetAllBookings(string userId="", string? statusFilterList = "");
+}
