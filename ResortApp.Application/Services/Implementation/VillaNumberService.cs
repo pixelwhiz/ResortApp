@@ -51,11 +51,16 @@ public class VillaNumberService : IVillaNumberService
 
     public IEnumerable<VillaNumber> GetAllVillaNumbers()
     {
-        return _unitOfWork.VillaNumber.GetAll();
+        return _unitOfWork.VillaNumber.GetAll(includeProperties: "Villa");
     }
 
     public VillaNumber GetVillaNumberById(int id)
     {
-        return _unitOfWork.VillaNumber.Get(u => u.VillaNum == id);
+        return _unitOfWork.VillaNumber.Get(u => u.VillaNum == id, includeProperties: "Villa");
+    }
+
+    public bool CheckVillaNumberExists(int villaNumber)
+    {
+        return _unitOfWork.VillaNumber.Any(u => u.VillaNum == villaNumber);
     }
 }
