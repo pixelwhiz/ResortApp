@@ -18,7 +18,6 @@ public class VillaService : IVillaService
         _webHostEnvironment = webHostEnvironment;
     }
 
-
     public void CreateVilla(Villa villa)
     {
         if (villa.Image != null)
