@@ -9,15 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="Data Tables">
+    <list default="true" id="5374bed1-302c-4eea-9550-b97aac22c3e3" name="Changes" comment="Fix Booking Controller">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/swagger-settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/dataSources/b0ed19a9-123e-4bbf-a506-919c284f7a50.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResortApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Application/Services/Implementation/BookingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Application/Services/Implementation/BookingService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/Repository/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Infrastructure/Migrations/Repository/Repository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Web/Controllers/BookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Controllers/BookingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Booking/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Booking/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResortApp.Web/wwwroot/js/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/ResortApp.Web/wwwroot/js/booking.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +39,46 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Runtime/CompilerServices/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Common/Interfaces/IBookingRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/BookingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/BookingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/BookingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/DashboardService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/DashboardService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/VillaNumberService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/VillaService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/VillaService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/VillaService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Implementation/VillaService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Interface/IBookingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Interface/IBookingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Interface/IVillaNumberService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Interface/IVillaService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Application/Services/Interface/IVillaService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/Villa.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Domain/Entities/VillaNumber.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Infrastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Infrastructure/Migrations/Repository/BookingRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResortApp.Web/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/AmenityController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Booking/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/VillaController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Controllers/VillaNumberController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/daffa/dev/@projects/ResortApp/ResortApp.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -64,43 +91,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ResortApp.Web: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.ResortApp.Web: http.executor": "Run",
-    ".NET Launch Settings Profile.ResortApp.Web: https.executor": "Debug",
-    ".NET Project.Unnamed.executor": "Run",
-    ".NET Project.hot reload.executor": "Run",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowExplorer.ShowToolbar": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ResortApp.Web: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ResortApp.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ResortApp.Web: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.hot reload.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ATTACH_DIALOG_SELECTED_CONTAINER&quot;: &quot;sqlserver&quot;,
+    &quot;ATTACH_DIALOG_SELECTED_HOST&quot;: &quot;root@sandsmp.ddns.net:22&quot;,
+    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;Publish to folder.Publish ResortApp.Web to folder.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ResortApp.Web: https">
+}</component>
+  <component name="RunManager" selected="Publish to folder.Publish ResortApp.Web to folder">
+    <configuration name="Publish ResortApp.Web to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="win-x86" self_contained="true" target_folder="$PROJECT_DIR$/ResortApp.Web/bin/Release/net8.0/win-x86/publish" target_framework="net8.0" uuid_high="4993719943908904761" uuid_low="-8185179828770961212" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="ResortApp.Web: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResortApp.Web/ResortApp.Web.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -150,7 +188,14 @@
       <item itemvalue=".NET Launch Settings Profile.ResortApp.Web: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.ResortApp.Web: http" />
       <item itemvalue=".NET Launch Settings Profile.ResortApp.Web: https" />
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="Publish to folder.Publish ResortApp.Web to folder" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -242,393 +287,432 @@
       <workItem from="1752743615840" duration="654000" />
       <workItem from="1752761903415" duration="210000" />
       <workItem from="1752762266209" duration="1377000" />
-      <workItem from="1752771614740" duration="7154000" />
+      <workItem from="1752771614740" duration="16111000" />
+      <workItem from="1752821576028" duration="1724000" />
+      <workItem from="1752826080912" duration="595000" />
+      <workItem from="1752854707648" duration="1923000" />
+      <workItem from="1752861329544" duration="26935000" />
+      <workItem from="1753004346523" duration="5137000" />
+      <workItem from="1753027607024" duration="2299000" />
+      <workItem from="1753040028916" duration="3746000" />
+      <workItem from="1753095785623" duration="10742000" />
+      <workItem from="1753260946803" duration="394000" />
+      <workItem from="1753268948094" duration="14831000" />
+      <workItem from="1753294197390" duration="395000" />
+      <workItem from="1753297707464" duration="506000" />
+      <workItem from="1753305005935" duration="1486000" />
+      <workItem from="1753342984638" duration="25099000" />
+      <workItem from="1753472797495" duration="817000" />
+      <workItem from="1753514408744" duration="14035000" />
+      <workItem from="1753612264149" duration="3589000" />
+      <workItem from="1753644351913" duration="4285000" />
+      <workItem from="1753692359245" duration="4000" />
+      <workItem from="1753693346529" duration="10123000" />
+      <workItem from="1753776396924" duration="1031000" />
+      <workItem from="1753777832853" duration="1080000" />
+      <workItem from="1753779120061" duration="11805000" />
+      <workItem from="1753856859506" duration="13294000" />
+      <workItem from="1753953707498" duration="16251000" />
+      <workItem from="1754047314619" duration="1650000" />
+      <workItem from="1754144753972" duration="4849000" />
+      <workItem from="1754165158563" duration="1828000" />
+      <workItem from="1754206636165" duration="1569000" />
+      <workItem from="1754211519967" duration="29672000" />
+      <workItem from="1754286890873" duration="13889000" />
     </task>
-    <task id="LOCAL-00001" summary="Retrive Roles in Dropdown">
+    <task id="LOCAL-00078" summary="Load Dashboard Total Bookings Data">
       <option name="closed" value="true" />
-      <created>1752139518335</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+      <created>1753284824950</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
       <option name="project" value="LOCAL" />
-      <updated>1752139518335</updated>
+      <updated>1753284824950</updated>
     </task>
-    <task id="LOCAL-00002" summary="initial commit">
+    <task id="LOCAL-00079" summary="Radial Chart in Action">
       <option name="closed" value="true" />
-      <created>1752139541282</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+      <created>1753285676333</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
       <option name="project" value="LOCAL" />
-      <updated>1752139541282</updated>
+      <updated>1753285676333</updated>
     </task>
-    <task id="LOCAL-00003" summary="Say NO to Magic Strings">
+    <task id="LOCAL-00080" summary="Styling Radial Chart">
       <option name="closed" value="true" />
-      <created>1752140928412</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+      <created>1753286405153</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
       <option name="project" value="LOCAL" />
-      <updated>1752140928412</updated>
+      <updated>1753286405153</updated>
     </task>
-    <task id="LOCAL-00004" summary="initial commit">
+    <task id="LOCAL-00081" summary="Better Code Design">
       <option name="closed" value="true" />
-      <created>1752140940042</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+      <created>1753286979112</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
       <option name="project" value="LOCAL" />
-      <updated>1752140940042</updated>
+      <updated>1753286979112</updated>
     </task>
-    <task id="LOCAL-00005" summary="initial commit">
+    <task id="LOCAL-00082" summary="Custom Color for Radial Chart">
       <option name="closed" value="true" />
-      <created>1752143437079</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+      <created>1753364854850</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
       <option name="project" value="LOCAL" />
-      <updated>1752143437079</updated>
+      <updated>1753364854851</updated>
     </task>
-    <task id="LOCAL-00006" summary="Register Post Endpoint">
+    <task id="LOCAL-00083" summary="Endpoint for Registered User Count">
       <option name="closed" value="true" />
-      <created>1752143457045</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+      <created>1753366958929</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
       <option name="project" value="LOCAL" />
-      <updated>1752143457045</updated>
+      <updated>1753366958929</updated>
     </task>
-    <task id="LOCAL-00007" summary="init Login Post Endpoint">
+    <task id="LOCAL-00084" summary="Revenue Radial Chart Endpoint">
       <option name="closed" value="true" />
-      <created>1752144196386</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+      <created>1753368003694</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
       <option name="project" value="LOCAL" />
-      <updated>1752144196386</updated>
+      <updated>1753368003694</updated>
     </task>
-    <task id="LOCAL-00008" summary="Register in Action &amp; Check if user is signed in">
+    <task id="LOCAL-00085" summary="UI for Charts">
       <option name="closed" value="true" />
-      <created>1752277862148</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+      <created>1753369617606</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
       <option name="project" value="LOCAL" />
-      <updated>1752277862148</updated>
+      <updated>1753369617606</updated>
     </task>
-    <task id="LOCAL-00009" summary="init Logout in action">
+    <task id="LOCAL-00086" summary="Radial Charts in Action">
       <option name="closed" value="true" />
-      <created>1752278115898</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+      <created>1753370757831</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
       <option name="project" value="LOCAL" />
-      <updated>1752278115898</updated>
+      <updated>1753370757831</updated>
     </task>
-    <task id="LOCAL-00010" summary="init Access Denied UI">
+    <task id="LOCAL-00087" summary="add PieChartVM">
       <option name="closed" value="true" />
-      <created>1752279203616</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+      <created>1753371749481</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
       <option name="project" value="LOCAL" />
-      <updated>1752279203616</updated>
+      <updated>1753371749481</updated>
     </task>
-    <task id="LOCAL-00011" summary="initial Authorization with Roles">
+    <task id="LOCAL-00088" summary="UI for Pie Chart">
       <option name="closed" value="true" />
-      <created>1752279526884</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+      <created>1753374344457</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
       <option name="project" value="LOCAL" />
-      <updated>1752279526884</updated>
+      <updated>1753374344457</updated>
     </task>
-    <task id="LOCAL-00012" summary="initial commit">
+    <task id="LOCAL-00089" summary="Endpoint for Pie Chart Action">
       <option name="closed" value="true" />
-      <created>1752279550651</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+      <created>1753374922540</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
       <option name="project" value="LOCAL" />
-      <updated>1752279550651</updated>
+      <updated>1753374922540</updated>
     </task>
-    <task id="LOCAL-00013" summary="add Configure Application Cookie">
+    <task id="LOCAL-00090" summary="Pie Chart in Action">
       <option name="closed" value="true" />
-      <created>1752280774895</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+      <created>1753377887346</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
       <option name="project" value="LOCAL" />
-      <updated>1752280774895</updated>
+      <updated>1753377887346</updated>
     </task>
-    <task id="LOCAL-00014" summary="Modify Default Requirements">
+    <task id="LOCAL-00091" summary="add Line Chart View Model">
       <option name="closed" value="true" />
-      <created>1752281147331</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+      <created>1753378722789</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
       <option name="project" value="LOCAL" />
-      <updated>1752281147331</updated>
+      <updated>1753378722789</updated>
     </task>
-    <task id="LOCAL-00015" summary="fix typo">
+    <task id="LOCAL-00092" summary="Retrieve Data for Line Chart 1">
       <option name="closed" value="true" />
-      <created>1752392925492</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+      <created>1753381333676</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
       <option name="project" value="LOCAL" />
-      <updated>1752392925492</updated>
+      <updated>1753381333676</updated>
     </task>
-    <task id="LOCAL-00016" summary="Add Villa Availability">
+    <task id="LOCAL-00093" summary="Retrieve Data for Line Chart 2">
       <option name="closed" value="true" />
-      <created>1752396075388</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+      <created>1753382555964</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
       <option name="project" value="LOCAL" />
-      <updated>1752396075388</updated>
+      <updated>1753382555964</updated>
     </task>
-    <task id="LOCAL-00017" summary="Move VillaList to Partial View">
+    <task id="LOCAL-00094" summary="fix typo">
       <option name="closed" value="true" />
-      <created>1752396891809</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+      <created>1753385903457</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
       <option name="project" value="LOCAL" />
-      <updated>1752396891809</updated>
+      <updated>1753385903457</updated>
     </task>
-    <task id="LOCAL-00018" summary="Reload Partial View without refreshing page">
+    <task id="LOCAL-00095" summary="LineChart 1">
       <option name="closed" value="true" />
-      <created>1752412821398</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+      <created>1753385923791</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1752412821398</updated>
+      <updated>1753385923791</updated>
     </task>
-    <task id="LOCAL-00019" summary="Without unobstrusive library">
+    <task id="LOCAL-00096" summary="forgot to add customerBookingsPieChart id">
       <option name="closed" value="true" />
-      <created>1752419194073</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+      <created>1753386610608</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1752419194073</updated>
+      <updated>1753386610608</updated>
     </task>
-    <task id="LOCAL-00020" summary="Spinner in Action">
+    <task id="LOCAL-00097" summary="As Not Tracking in EF Core">
       <option name="closed" value="true" />
-      <created>1752422398249</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+      <created>1753531804964</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1752422398249</updated>
+      <updated>1753531804964</updated>
     </task>
-    <task id="LOCAL-00021" summary="Create Booking Model">
+    <task id="LOCAL-00098" summary="Add Syncfustion to Project">
       <option name="closed" value="true" />
-      <created>1752424665243</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+      <created>1753647077145</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1752424665243</updated>
+      <updated>1753647077145</updated>
     </task>
-    <task id="LOCAL-00022" summary="initial commit">
+    <task id="LOCAL-00099" summary="Button for Generating Invoice">
       <option name="closed" value="true" />
-      <created>1752424674016</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+      <created>1753710433931</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1752424674016</updated>
+      <updated>1753710433931</updated>
     </task>
-    <task id="LOCAL-00023" summary="Create Booking Table and Booking Repository">
+    <task id="LOCAL-00100" summary="Word Document Download">
       <option name="closed" value="true" />
-      <created>1752431673541</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+      <created>1753710818294</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
       <option name="project" value="LOCAL" />
-      <updated>1752431673541</updated>
+      <updated>1753710818294</updated>
     </task>
-    <task id="LOCAL-00024" summary="Get Action Finalize Booking">
+    <task id="LOCAL-00101" summary="Load other properties in Word File">
       <option name="closed" value="true" />
-      <created>1752436169268</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+      <created>1753712117604</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
       <option name="project" value="LOCAL" />
-      <updated>1752436169268</updated>
+      <updated>1753712117604</updated>
     </task>
-    <task id="LOCAL-00025" summary="Clean UP">
+    <task id="LOCAL-00102" summary="Inserting Table in Word Document">
       <option name="closed" value="true" />
-      <created>1752436364285</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+      <created>1753781543306</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
       <option name="project" value="LOCAL" />
-      <updated>1752436364285</updated>
+      <updated>1753781543306</updated>
     </task>
-    <task id="LOCAL-00026" summary="Call Finalize Booking Action">
+    <task id="LOCAL-00103" summary="Add Custom Styling to Table">
       <option name="closed" value="true" />
-      <created>1752438077751</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+      <created>1753788918489</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
       <option name="project" value="LOCAL" />
-      <updated>1752438077751</updated>
+      <updated>1753788918489</updated>
     </task>
-    <task id="LOCAL-00027" summary="Finalize Booking Dynamic UI">
+    <task id="LOCAL-00104" summary="Pdf Export Support">
       <option name="closed" value="true" />
-      <created>1752447504850</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+      <created>1753789308070</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
       <option name="project" value="LOCAL" />
-      <updated>1752447504850</updated>
+      <updated>1753789308070</updated>
     </task>
-    <task id="LOCAL-00028" summary="Add Application User Repository">
+    <task id="LOCAL-00105" summary="Add Row to Table">
       <option name="closed" value="true" />
-      <created>1752447832312</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+      <created>1753872087741</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
       <option name="project" value="LOCAL" />
-      <updated>1752447832312</updated>
+      <updated>1753872087742</updated>
     </task>
-    <task id="LOCAL-00029" summary="Load user details">
+    <task id="LOCAL-00106" summary="Add Download PPT Button">
       <option name="closed" value="true" />
-      <created>1752451232284</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+      <created>1753873761385</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
       <option name="project" value="LOCAL" />
-      <updated>1752451232284</updated>
+      <updated>1753873761385</updated>
     </task>
-    <task id="LOCAL-00030" summary="Add Booking Status">
+    <task id="LOCAL-00107" summary="Download PPT">
       <option name="closed" value="true" />
-      <created>1752492562837</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+      <created>1753876270630</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
       <option name="project" value="LOCAL" />
-      <updated>1752492562837</updated>
+      <updated>1753876270631</updated>
     </task>
-    <task id="LOCAL-00031" summary="Finalize Booking Post">
+    <task id="LOCAL-00108" summary="Image in PPT">
       <option name="closed" value="true" />
-      <created>1752493531227</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+      <created>1753878532784</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
       <option name="project" value="LOCAL" />
-      <updated>1752493531227</updated>
+      <updated>1753878532784</updated>
     </task>
-    <task id="LOCAL-00032" summary="fix typo">
+    <task id="LOCAL-00109" summary="initial commit">
       <option name="closed" value="true" />
-      <created>1752586822602</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+      <created>1753956250348</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
       <option name="project" value="LOCAL" />
-      <updated>1752586822603</updated>
+      <updated>1753956250348</updated>
     </task>
-    <task id="LOCAL-00033" summary="Load user details">
+    <task id="LOCAL-00110" summary="Add Dashboard Service and move DTOs">
       <option name="closed" value="true" />
-      <created>1752586864616</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+      <created>1753956290563</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
       <option name="project" value="LOCAL" />
-      <updated>1752586864616</updated>
+      <updated>1753956290563</updated>
     </task>
-    <task id="LOCAL-00034" summary="initial commit">
+    <task id="LOCAL-00111" summary="Dashboard Service Methods">
       <option name="closed" value="true" />
-      <created>1752587793826</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+      <created>1753964427192</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
       <option name="project" value="LOCAL" />
-      <updated>1752587793826</updated>
+      <updated>1753964427192</updated>
     </task>
-    <task id="LOCAL-00035" summary="Fix bugs with Finalize Booking">
+    <task id="LOCAL-00112" summary="Solve Error with Dependency">
       <option name="closed" value="true" />
-      <created>1752587826016</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+      <created>1753964720507</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
       <option name="project" value="LOCAL" />
-      <updated>1752587826016</updated>
+      <updated>1753964720507</updated>
     </task>
-    <task id="LOCAL-00036" summary="fix typo">
+    <task id="LOCAL-00113" summary="Db Initializer in Action">
       <option name="closed" value="true" />
-      <created>1752672728165</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+      <created>1753981568392</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
       <option name="project" value="LOCAL" />
-      <updated>1752672728165</updated>
+      <updated>1753981568392</updated>
     </task>
-    <task id="LOCAL-00037" summary="initial commit">
+    <task id="LOCAL-00114" summary="Deploy to My Windows Hosting">
       <option name="closed" value="true" />
-      <created>1752673233518</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+      <created>1754292214519</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
       <option name="project" value="LOCAL" />
-      <updated>1752673233518</updated>
+      <updated>1754292214519</updated>
     </task>
-    <task id="LOCAL-00038" summary="Add Stripe Keys and Nuget Package">
+    <task id="LOCAL-00115" summary="Create Villa Service Interface">
       <option name="closed" value="true" />
-      <created>1752677092432</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+      <created>1754292306866</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
       <option name="project" value="LOCAL" />
-      <updated>1752677092432</updated>
+      <updated>1754292306866</updated>
     </task>
-    <task id="LOCAL-00039" summary="Add Stripe Keys and Nuget Package">
+    <task id="LOCAL-00116" summary="initial commit">
       <option name="closed" value="true" />
-      <created>1752677191915</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+      <created>1754293439033</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
       <option name="project" value="LOCAL" />
-      <updated>1752677191915</updated>
+      <updated>1754293439033</updated>
     </task>
-    <task id="LOCAL-00040" summary="Stripe Keys Configuration">
+    <task id="LOCAL-00117" summary="Villa Service in Action">
       <option name="closed" value="true" />
-      <created>1752678344887</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+      <created>1754293465664</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
       <option name="project" value="LOCAL" />
-      <updated>1752678344887</updated>
+      <updated>1754293465664</updated>
     </task>
-    <task id="LOCAL-00041" summary="init App Configuration">
+    <task id="LOCAL-00118" summary="remove UnitOfWork">
       <option name="closed" value="true" />
-      <created>1752678726261</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+      <created>1754293615722</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
       <option name="project" value="LOCAL" />
-      <updated>1752678726261</updated>
+      <updated>1754293615722</updated>
     </task>
-    <task id="LOCAL-00042" summary="Create Session in Stripe">
+    <task id="LOCAL-00119" summary="add VillaNumber Service">
       <option name="closed" value="true" />
-      <created>1752682913980</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+      <created>1754294022136</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
       <option name="project" value="LOCAL" />
-      <updated>1752682913980</updated>
+      <updated>1754294022136</updated>
     </task>
-    <task id="LOCAL-00043" summary="fixing migrations">
+    <task id="LOCAL-00120" summary="Villa Number in Action">
       <option name="closed" value="true" />
-      <created>1752692985215</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+      <created>1754295395601</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
       <option name="project" value="LOCAL" />
-      <updated>1752692985215</updated>
+      <updated>1754295395601</updated>
     </task>
-    <task id="LOCAL-00044" summary="Update Stripe.Net version to 48.3.0">
+    <task id="LOCAL-00121" summary="Home Controller with Services">
       <option name="closed" value="true" />
-      <created>1752693080800</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+      <created>1754295871514</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
       <option name="project" value="LOCAL" />
-      <updated>1752693080800</updated>
+      <updated>1754295871514</updated>
     </task>
-    <task id="LOCAL-00045" summary="Stripe in Action">
+    <task id="LOCAL-00122" summary="add Amenity Service">
       <option name="closed" value="true" />
-      <created>1752693120751</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+      <created>1754297675616</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
       <option name="project" value="LOCAL" />
-      <updated>1752693120751</updated>
+      <updated>1754297675616</updated>
     </task>
-    <task id="LOCAL-00046" summary="Stripe Payment Intent Id">
+    <task id="LOCAL-00123" summary="Add Booking Service">
       <option name="closed" value="true" />
-      <created>1752694009340</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+      <created>1754298125095</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
       <option name="project" value="LOCAL" />
-      <updated>1752694009340</updated>
+      <updated>1754298125095</updated>
     </task>
-    <task id="LOCAL-00047" summary="Empty Booking List UI">
+    <task id="LOCAL-00124" summary="Booking Service Implementation">
       <option name="closed" value="true" />
-      <created>1752772021710</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+      <created>1754298713964</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
       <option name="project" value="LOCAL" />
-      <updated>1752772021710</updated>
+      <updated>1754298713964</updated>
     </task>
-    <task id="LOCAL-00048" summary="Data Tables">
+    <task id="LOCAL-00125" summary="Booking Controller">
       <option name="closed" value="true" />
-      <created>1752773363617</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+      <created>1754301847353</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
       <option name="project" value="LOCAL" />
-      <updated>1752773363617</updated>
+      <updated>1754301847353</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00126" summary="Fix Booking Controller">
+      <option name="closed" value="true" />
+      <created>1754302358430</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1754302358430</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,34 +733,41 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Without unobstrusive library" />
-    <MESSAGE value="Spinner in Action" />
-    <MESSAGE value="Create Booking Model" />
-    <MESSAGE value="Create Booking Table and Booking Repository" />
-    <MESSAGE value="Get Action Finalize Booking" />
-    <MESSAGE value="Clean UP" />
-    <MESSAGE value="Call Finalize Booking Action" />
-    <MESSAGE value="Finalize Booking Dynamic UI" />
-    <MESSAGE value="Add Application User Repository" />
-    <MESSAGE value="Add Booking Status" />
-    <MESSAGE value="Finalize Booking Post" />
-    <MESSAGE value="Load user details" />
-    <MESSAGE value="Fix bugs with Finalize Booking" />
-    <MESSAGE value="fix typo" />
+    <MESSAGE value="Load other properties in Word File" />
+    <MESSAGE value="Inserting Table in Word Document" />
+    <MESSAGE value="Add Custom Styling to Table" />
+    <MESSAGE value="Pdf Export Support" />
+    <MESSAGE value="Add Row to Table" />
+    <MESSAGE value="Add Download PPT Button" />
+    <MESSAGE value="Download PPT" />
+    <MESSAGE value="Image in PPT" />
+    <MESSAGE value="Add Dashboard Service and move DTOs" />
+    <MESSAGE value="Dashboard Service Methods" />
+    <MESSAGE value="Solve Error with Dependency" />
+    <MESSAGE value="Db Initializer in Action" />
+    <MESSAGE value="Deploy to My Windows Hosting" />
+    <MESSAGE value="Create Villa Service Interface" />
     <MESSAGE value="initial commit" />
-    <MESSAGE value="Add Stripe Keys and Nuget Package" />
-    <MESSAGE value="Stripe Keys Configuration" />
-    <MESSAGE value="init App Configuration" />
-    <MESSAGE value="Create Session in Stripe" />
-    <MESSAGE value="fixing migrations" />
-    <MESSAGE value="Update Stripe.Net version to 48.3.0" />
-    <MESSAGE value="Stripe in Action" />
-    <MESSAGE value="Stripe Payment Intent Id" />
-    <MESSAGE value="Empty Booking List UI" />
-    <MESSAGE value="Data Tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data Tables" />
+    <MESSAGE value="Villa Service in Action" />
+    <MESSAGE value="remove UnitOfWork" />
+    <MESSAGE value="add VillaNumber Service" />
+    <MESSAGE value="Villa Number in Action" />
+    <MESSAGE value="Home Controller with Services" />
+    <MESSAGE value="add Amenity Service" />
+    <MESSAGE value="Add Booking Service" />
+    <MESSAGE value="Booking Service Implementation" />
+    <MESSAGE value="Booking Controller" />
+    <MESSAGE value="Fix Booking Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Booking Controller" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints" />
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint" />
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#Microsoft.Extensions.FileProviders.PhysicalFileProvider" memberName="Root" />
