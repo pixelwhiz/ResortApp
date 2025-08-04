@@ -65,7 +65,7 @@ public class Repository<T> : IRepository<T> where T : class
             //T, TNumber -- case sensitive
             foreach (var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
             {
-                query = query.Include(includeProp);
+                query = query.Include(includeProp.Trim());
             }
         }
 

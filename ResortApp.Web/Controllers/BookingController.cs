@@ -155,7 +155,7 @@ public class BookingController : Controller
 
         return View(bookingFromDb);
     }
-
+    
     [HttpPost]
     [Authorize]
     public IActionResult GenerateInvoice(int id, string downloadType)
