@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using ResortApp.Application.Common.Interfaces;
+using ResortApp.Application.Common.Utility;
 using ResortApp.Application.Services.Interface;
 using ResortApp.Domain.Entities;
 
@@ -98,5 +99,22 @@ public class VillaService : IVillaService
     public Villa GetVillaById(int id)
     {
         return _unitOfWork.Villa.Get(u => u.Id == id, includeProperties: "VillaAmenity");
+    }
+
+    public IEnumerable<Villa> GetVillasAvailabilityByDate(int nights, DateOnly checkInDate)
+    {
+        var villaList = _unitOfWork.Villa.GetAll(includeProperties: "VillaAmenity").ToList();
+        var villaNumbersList = _unitOfWork.VillaNumber.GetAll().ToList();
+        var bookedVillas = _unitOfWork.Booking
+            .GetAll(u => u.Status == SD.StatusApproved || u.Status == SD.StatusCheckedIn).ToList();
+
+        foreach (var villa in villaList)
+        {
+            int roomAvailable =
+                SD.VillaRoomsAvailable_Count(villa.Id, villaNumbersList, checkInDate, nights, bookedVillas);
+            villa.IsAvailable = roomAvailable > 0 ? true : false;
+        }
+
+        return villaList;
     }
 }
