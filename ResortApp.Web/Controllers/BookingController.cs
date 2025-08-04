@@ -149,7 +149,7 @@ public class BookingController : Controller
         if (bookingFromDb.VillaNumber == 0 && bookingFromDb.Status == SD.StatusApproved)
         {
             var availableVillaNumber = AssignAvailableVillaNumberByVilla(bookingFromDb.VillaId);
-            bookingFromDb.VillaNumbers = _unitOfWork.VillaNumber.GetAll(u => u.VillaId == bookingFromDb.VillaId
+            bookingFromDb.VillaNumbers = _villaNumberService.GetAllVillaNumbers().Where(u => u.VillaId == bookingFromDb.VillaId
                 && availableVillaNumber.Any(x => x == u.VillaNum)).ToList();
         }
 
@@ -313,9 +313,9 @@ public class BookingController : Controller
     private List<int> AssignAvailableVillaNumberByVilla(int villaId)
     {
         List<int> availableVillaNumbers = new();
-        var villaNumbers = _unitOfWork.VillaNumber.GetAll(u => u.VillaId == villaId);
-        var checkedInVilla = _unitOfWork.Booking.GetAll(u => u.VillaId == villaId && u.Status == SD.StatusCheckedIn)
-            .Select(u=>u.VillaNumber);
+        var villaNumbers = _villaNumberService.GetAllVillaNumbers().Where(u => u.VillaId == villaId);
+        var checkedInVilla = _bookingService.GetCheckedInVillaNumbers(villaId);
+
         foreach (var villaNumber in villaNumbers)
         {
             if (!checkedInVilla.Contains(villaNumber.VillaNum))
