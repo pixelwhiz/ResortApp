@@ -49,22 +49,17 @@ public class DashboardService : IDashboardService
     public async Task<RadialBarChartDto> GetRegisteredUserChartData()
     {
         var totalUsers = _unitOfWork.User.GetAll();
-        var countByCurrentMonth =
-            totalUsers.Count(u => u.CreatedAt >= currentMonthStartDate && u.CreatedAt <= DateTime.Now);
-        var countByPreviousMonth =
-            totalUsers.Count(u => u.CreatedAt >= currentMonthStartDate && u.CreatedAt <= currentMonthStartDate);
+        var countByCurrentMonth = totalUsers.Count(u => u.CreatedAt >= currentMonthStartDate && u.CreatedAt <= DateTime.Now);
+        var countByPreviousMonth = totalUsers.Count(u => u.CreatedAt >= currentMonthStartDate && u.CreatedAt <= currentMonthStartDate);
 
         return SD.GetRadialChartDataModel(totalUsers.Count(), countByCurrentMonth, countByPreviousMonth);
     }
 
     public async Task<RadialBarChartDto> GetTotalBookingRadialChartData()
     {
-        var totalBookings = _unitOfWork.Booking.GetAll(u => u.Status != SD.StatusPending
-                                                            || u.Status == SD.StatusCancelled);
-        var countByCurrentMonth =
-            totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= DateTime.Now);
-        var countByPreviousMonth =
-            totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= currentMonthStartDate);
+        var totalBookings = _unitOfWork.Booking.GetAll(u => u.Status != SD.StatusPending || u.Status == SD.StatusCancelled);
+        var countByCurrentMonth = totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= DateTime.Now);
+        var countByPreviousMonth = totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= currentMonthStartDate);
 
         return SD.GetRadialChartDataModel(totalBookings.Count(), countByCurrentMonth, countByPreviousMonth);
     }
@@ -133,6 +128,5 @@ public class DashboardService : IDashboardService
 
         return lineChartDto;
     }
-
 
 }
